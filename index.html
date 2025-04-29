@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Apna College - Login / Signup</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="top-banner">Welcome to <span>Apna College</span></div>
+
+  <div class="container" id="login-page">
+    <h2>Login</h2>
+    <input type="text" id="login-id" placeholder="Admission Number">
+    <input type="password" id="login-pass" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <div class="link">Don't have an account? <a href="#" onclick="showSignup()">Signup</a></div>
+  </div>
+
+  <div class="container" id="signup-page" style="display:none;">
+    <h2>Signup</h2>
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="text" id="admission" placeholder="Admission Number">
+    <input type="password" id="password" placeholder="Password">
+    <select id="course">
+      <option disabled selected>Select Course</option>
+      <option value="BCA">BCA</option>
+      <option value="BBA">BBA</option>
+      <option value="B.Tech">B.Tech</option>
+    </select>
+    <button onclick="signup()">Signup</button>
+    <div class="link">Already have an account? <a href="#" onclick="showLogin()">Login</a></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

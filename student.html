@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Apna College - Student Info</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="top-banner">Welcome to <span>Apna College</span></div>
+  <div class="container" id="student-page">
+    <h2 id="welcome-msg">Welcome, </h2>
+    <div><b>Admission No:</b> <span id="s-id"></span></div>
+    <div><b>Course:</b> <span id="s-course"></span></div>
+    <div><b>Total Fees:</b> ₹<span id="s-total"></span></div>
+    <div><b>Total Paid:</b> ₹<span id="s-paid">0</span></div>
+    <div><b>Remaining Fees:</b> ₹<span id="s-remaining"></span></div>
+    <input type="number" id="pay-amount" placeholder="Enter amount to pay">
+    <button onclick="makePayment()">Submit Fees</button>
+    <button class="logout" onclick="logout()">Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
